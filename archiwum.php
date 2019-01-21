@@ -17,18 +17,18 @@
     <div id="cale">
 
         <div id="header">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark ">
                 <a class="navbar-brand" href="#"><h3>Nadajniki</h3></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.php">Strona główna <span class="sr-only">(current)</span></a>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.php">Strona główna</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="archiwum.php">Archiwum</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="archiwum.php">Archiwum <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="dodaj.php">Dodaj wpis</a>
@@ -39,17 +39,16 @@
             </nav>
 
         </div>
-
-        <div id="guziki">
-
-        </div>
+        <center>
+<h4><br>Welcome to the archive of entries.
+</h4></center>
 
         <div id="tabela">
             <table>
             </table>
         </div>
-        
-        <div id="flags">
+
+   <div id="flags">
                 <center>
                     <img src="gfx/pl.png" alt="Polish" class="fl">
                     <img src="gfx/eng.png" alt="English" class="fl">
@@ -58,7 +57,6 @@
                     <img src="gfx/rus.png" alt="Russian" class="fl">
                 </center>
             </div>
-
     </div>
 
 

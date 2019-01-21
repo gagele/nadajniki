@@ -1,8 +1,62 @@
-li{
-    list-style:none;
-    display:inline-block;
-}
-body
+.navbar
 {
-    background-color: #c6c6c6;
+    background-color:#272D2D;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+body {
+    background-color: #EAF0CE;
+}
+
+#nazwy {
+    margin-top: 3%;
+    width: 26%;
+    float: left;
+    text-align: right;
+    margin-right: 1%;
+    font-size: 21.8;
+}
+
+#formularz1 {
+    margin-top: 3%;
+    width: 70%;
+    float: left;
+    font-size: 1em;
+}
+
+.fl {
+    margin: 10px;
+    width: 30px;
+    border: 0.7px solid #8E9B90;
+    border-radius:40px;
+
+}
+
+#flags {
+    margin-top: 5%;
+    width: 100%;
+    bottom: 0px;
+    
+
+}
+
+input[type="text"] {
+    margin-bottom: 3px;
+}
+input[type="button"]
+{
+    float:right;
+    margin-right: 15%;
+}
+
+.content {
+    flex: 1;
+}
+
+.info
+{
+    font-size:10;
 }
