@@ -18,7 +18,7 @@
 
         <div id="header">
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#"><h3>Nadajniki</h3></a>
+                <a class="navbar-brand" href="index.php"><h3>Nadajniki</h3></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

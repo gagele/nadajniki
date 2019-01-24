@@ -18,7 +18,7 @@
 
         <div id="header">
             <nav class="navbar navbar-expand-lg navbar-dark ">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.php">
                     <h3>Nadajniki</h3>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,7 @@
                     Call sign *<br>Name * <br>Date * <br>Time *<br>RST * <br>Locator<br>Remark
                 </div>
                 <div id="formularz1">
-                    <form name="formularz-dodawanie" action="POST">
+                    <form name="formularz-dodawanie" action="pobranie_danych.php" method="POST">
                         <input type="text"  name="call-sign" required>
                         <br><input type="text" name="name" required>
                         <br><input type="text" name="date" required>
@@ -63,7 +63,6 @@
                         <font class="info">
                             QTH can also be typed here, not in the locator field!</font>
                         <br><br>*Fields marked with this sign must be filled with information, otherwise you will be rejected. <input type="submit" name="dodaj" value="Save Report" class="btn btn-dark">
-
                         <br><br>
                     </form>
 
