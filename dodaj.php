@@ -52,6 +52,7 @@
                         <input type="text"  name="call-sign" required>
                         <br><input type="text" name="name" required>
                         <br><input type="text" name="date" required>
+                        <font class="info">DD/MM/YYYY</font>
                         <br> <input type="text" name="time" required>
                         <br> <input type="text" name="rst" required>
                         <font class="info">Keep this short, like 579. </font>
@@ -61,7 +62,7 @@
                         <br><input type="text" name="remark">
                         <font class="info">
                             QTH can also be typed here, not in the locator field!</font>
-                        <br><br>*Fields marked with this sign must be filled with information, otherwise you will be rejected. <input type="button" name="dodaj" value="Save Report" class="btn btn-dark">
+                        <br><br>*Fields marked with this sign must be filled with information, otherwise you will be rejected. <input type="submit" name="dodaj" value="Save Report" class="btn btn-dark">
 
                         <br><br>
                     </form>

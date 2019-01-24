@@ -39,15 +39,12 @@ body {
     margin-top: 5%;
     width: 100%;
     bottom: 0px;
-    
-
 }
 
-input[type="text"] {
+input[type="text"]{
     margin-bottom: 3px;
 }
-input[type="button"]
-{
+input[type="submit"]{
     float:right;
     margin-right: 15%;
 }
