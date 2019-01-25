@@ -58,7 +58,7 @@
                         <font class="info">Keep this short, like 579. </font>
                         <br> <input type="text" name="locator">
                         <font class="info"><abbr title="6 characters with no space between the characters, for example JO67KI."> XXNNXX </abbr> </font>
-                        <br><input type="text" name="remark">
+                        <br><textarea cols="23" rows="4" name="remark"></textarea>
                         <font class="info">
                             QTH can also be typed here, not in the locator field!</font>
                         <br><br>*Fields marked with this sign must be filled with information, otherwise you will be rejected. <input type="submit" name="dodaj" value="Save Report" class="btn btn-dark">
