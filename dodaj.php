@@ -57,8 +57,7 @@
                         <br> <input type="text" name="rst" required>
                         <font class="info">Keep this short, like 579. </font>
                         <br> <input type="text" name="locator">
-                        <font class="info"> XXNNXX - 6 characters
-                            with no space between the characters, for example JO67KI.</font>
+                        <font class="info"><abbr title="6 characters with no space between the characters, for example JO67KI."> XXNNXX </abbr> </font>
                         <br><input type="text" name="remark">
                         <font class="info">
                             QTH can also be typed here, not in the locator field!</font>

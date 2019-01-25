@@ -15,7 +15,7 @@
     $locator = $_POST["locator"];
     $remark = $_POST["remark"];
 
-    $insert = "INSERT INTO nadajnik (`call_sign`,`name`,`date`,`time`,`rst`,`locator`,`remark`) VALUES ('$call','$name','$date','$time','$rst',$locator','$remark')";
+    $insert = "INSERT INTO nadajnik (`call_sign`,`name`,`date`,`time`,`rst`,`locator`,`remark`) VALUES ('$call','$name','$date','$time','$rst','$locator','$remark')";
     $connection -> query($insert);
     $connection -> close();
 ?>
