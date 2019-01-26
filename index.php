@@ -45,8 +45,30 @@
         </div>
 
         <div id="tabela">
-            <table>
-            </table>
+            <?php
+                $connection = new mysqli('localhost','root','','nadajniki');
+
+                if(mysqli_connect_errno() != 0){
+                    echo("Nastąpił błąd w trakcie łączenia z baza danych");
+                } 
+
+                $select = "SELECT call_sign,name,date,time,rst,locator,remark FROM nadajnik ORDER BY date DESC LIMIT 50";
+
+                $wypisanie = $connection -> query($select);
+
+                while(($rekord = $wypisanie -> fetch_assoc()) !== null){
+                    echo($rekord['call_sign']);
+                    echo($rekord['name']);
+                    echo($rekord['date']);
+                    echo($rekord['time']);
+                    echo($rekord['rst']);
+                    echo($rekord['locator']);
+                    echo($rekord['remark']);
+                    echo('<br />');
+                }
+
+                $connection -> close();
+            ?>
         </div>
         
         <div id="flags">

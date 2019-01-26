@@ -18,7 +18,7 @@
 
         <div id="header">
             <nav class="navbar navbar-expand-lg navbar-dark ">
-                <a class="navbar-brand" href="#"><h3>Nadajniki</h3></a>
+                <a class="navbar-brand" href="index.php"><h3>Nadajniki</h3></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,8 +44,30 @@
 </h4></center>
 
         <div id="tabela">
-            <table>
-            </table>
+           <?php
+                $connection = new mysqli('localhost','root','','nadajniki');
+
+                if(mysqli_connect_errno() != 0){
+                    echo("Nastąpił błąd w trakcie łączenia z baza danych");
+                } 
+
+                $select = "SELECT call_sign,name,date,time,rst,locator,remark FROM nadajnik ORDER BY date DESC";
+
+                $wypisanie = $connection -> query($select);
+
+                while(($rekord = $wypisanie -> fetch_assoc()) !== null){
+                    echo($rekord['call_sign']);
+                    echo($rekord['name']);
+                    echo($rekord['date']);
+                    echo($rekord['time']);
+                    echo($rekord['rst']);
+                    echo($rekord['locator']);
+                    echo($rekord['remark']);
+                    echo('<br />');
+                }
+
+                $connection -> close();
+            ?>
         </div>
 
    <div id="flags">

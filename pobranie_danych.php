@@ -1,11 +1,9 @@
 <?php
     $connection = new mysqli('localhost','root','','nadajniki');
     if(mysqli_connect_errno() != 0){
-        echo("blad");
+        echo("Nastąpił błąd w trakcie łączenia z baza danych");
     }
-    else{
-        echo("no dziala lol");
-    }
+   
     
     $call = $_POST["call-sign"];
     $name = $_POST["name"];
