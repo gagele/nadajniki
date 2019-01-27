@@ -32,17 +32,17 @@ body {
 }
 
 .fl {
-    margin: 10px;
-    width: 30px;
+    margin: 7px;
+    width: 20px;
     border: 0.7px solid #8E9B90;
     border-radius: 40px;
-
 }
 
 #flags {
     margin-top: 5%;
     width: 100%;
     bottom: 0px;
+    
 }
 
 input[type="text"] {
@@ -68,14 +68,28 @@ table.tabelka {
     text-align: center;
     margin-top: 2%;
     border-collapse: collapse;
+    -webkit-box-shadow: 5px 2px 17px 3px rgba(0,0,0,0.59); 
+box-shadow: 5px 2px 17px 3px rgba(0,0,0,0.59);
 }
 
-table.tabelka td,
-table.tabelka th {
+table.tabelka th 
+{
+    border: 2px solid #FFFFFF;
+    padding: 4px 5px;
+    text-transform: uppercase;
+    background:#272D2D;
+    color:white;
+}
+
+table.tabelka td
+{
     border: 1px solid #FFFFFF;
     padding: 3px 4px;
 }
-
+td.imie
+{
+    text-transform: capitalize;
+}
 table.tabelka tbody td {
     font-size: 13px;
 }

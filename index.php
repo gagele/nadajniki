@@ -33,7 +33,17 @@
                         <li class="nav-item">
                             <a class="nav-link" href="dodaj.php">Dodaj wpis</a>
                         </li>
-
+<li class="nav-item dropdown ">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Język
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Polski<img src="gfx/pl.png" alt="Polish" class="fl"></a>
+          <a class="dropdown-item" href="#">Angielski<img src="gfx/eng.png" alt="English" class="fl"></a>
+          <a class="dropdown-item" href="#">Niemiecki<img src="gfx/de.png" alt="German" class="fl"></a>
+          <a class="dropdown-item" href="#">Rosyjski<img src="gfx/rus.png" alt="Russian" class="fl"></a>
+        </div>
+      </li>
                     </ul>
                 </div>
             </nav>
@@ -69,7 +79,7 @@ echo "<table class=\"tabelka\" cellpadding=\"2\" border=1>";
                 while(($rekord = $wypisanie -> fetch_assoc()) !== null){
                     echo("<tr>");
                     echo("<td>".$rekord['call_sign']."</td>");
-                    echo("<td>".$rekord['name']."</td>");
+                    echo("<td class=imie>".$rekord['name']."</td>");
                     echo("<td>".$rekord['date']."</td>");
                     echo("<td>".$rekord['time']."</td>");
                     echo("<td>".$rekord['rst']."</td>");
@@ -84,16 +94,20 @@ echo "<table class=\"tabelka\" cellpadding=\"2\" border=1>";
               </center>
         </div>
         
-        <div id="flags">
-                <center>
-                    <img src="gfx/pl.png" alt="Polish" class="fl">
-                    <img src="gfx/eng.png" alt="English" class="fl">
-                    <img src="gfx/de.png" alt="Deutsch" class="fl">
+      
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4">
 
-                    <img src="gfx/rus.png" alt="Russian" class="fl">
-                </center>
-            </div>
 
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="#">Link</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
     </div>
 
 

@@ -35,7 +35,17 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="dodaj.php">Dodaj wpis<span class="sr-only">(current)</span></a>
                         </li>
-
+<li class="nav-item dropdown ">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Język
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Polski<img src="gfx/pl.png" alt="Polish" class="fl"></a>
+          <a class="dropdown-item" href="#">Angielski<img src="gfx/eng.png" alt="English" class="fl"></a>
+          <a class="dropdown-item" href="#">Niemiecki<img src="gfx/de.png" alt="German" class="fl"></a>
+          <a class="dropdown-item" href="#">Rosyjski<img src="gfx/rus.png" alt="Russian" class="fl"></a>
+        </div>
+      </li>
                     </ul>
                 </div>
             </nav>
@@ -67,15 +77,18 @@
 
                 </div>
             </div>
-            <div id="flags">
-                <center>
-                    <img src="gfx/pl.png" alt="Polish" class="fl">
-                    <img src="gfx/eng.png" alt="English" class="fl">
-                    <img src="gfx/de.png" alt="Deutsch" class="fl">
+        </div>
+        
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4">
 
-                    <img src="gfx/rus.png" alt="Russian" class="fl">
-                </center>
-            </div>
+    
+    <!-- Copyright -->
+    
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
         </div>
 
 
