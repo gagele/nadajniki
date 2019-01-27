@@ -53,6 +53,12 @@
         <center>
             <h4><br>Welcome to the archive of entries.
             </h4>
+            
+        <br>
+        <input type="button" name="dodaj" value="Reports by call" class="btn btn-dark">
+        <input type="button" name="dodaj" value="Reports by KM" class="btn btn-dark">
+        <input type="button" name="dodaj" value="Highscores" class="btn btn-dark">
+        <br>
         </center>
 
         <div id="container">
