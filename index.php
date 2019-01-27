@@ -25,23 +25,23 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.php">Strona główna <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.php">Main Page<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="archiwum.php">Archiwum</a>
+                            <a class="nav-link" href="archiwum.php">Archive</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="dodaj.php">Dodaj wpis</a>
+                            <a class="nav-link" href="dodaj.php">Add report</a>
                         </li>
 <li class="nav-item dropdown ">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Język
+          Language
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Polski<img src="gfx/pl.png" alt="Polish" class="fl"></a>
-          <a class="dropdown-item" href="#">Angielski<img src="gfx/eng.png" alt="English" class="fl"></a>
-          <a class="dropdown-item" href="#">Niemiecki<img src="gfx/de.png" alt="German" class="fl"></a>
-          <a class="dropdown-item" href="#">Rosyjski<img src="gfx/rus.png" alt="Russian" class="fl"></a>
+          <a class="dropdown-item" href="#">Polish<img src="gfx/pl.png" alt="Polish" class="fl"></a>
+          <a class="dropdown-item" href="#">English<img src="gfx/eng.png" alt="English" class="fl"></a>
+          <a class="dropdown-item" href="#">German<img src="gfx/de.png" alt="German" class="fl"></a>
+          <a class="dropdown-item" href="#">Russian<img src="gfx/rus.png" alt="Russian" class="fl"></a>
         </div>
       </li>
                     </ul>
@@ -50,9 +50,10 @@
 
         </div>
 
-        <div id="guziki">
-
-        </div>
+        <center>
+            <h4><br>Last 50 entries:
+            </h4>
+        </center>
 
         <div id="container">
           <center>

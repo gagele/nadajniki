@@ -16,40 +16,39 @@
 
     <div id="cale">
 
-        <div id="header">
-            <nav class="navbar navbar-expand-lg navbar-dark ">
-                <a class="navbar-brand" href="index.php">
-                    <h3>Nadajniki</h3>
-                </a>
+      <div id="header">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="index.php"><h3>Nadajniki</h3></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php">Strona główna</a>
+                            <a class="nav-link" href="index.php">Main Page</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="archiwum.php">Archiwum</a>
+                            <a class="nav-link" href="archiwum.php">Archive</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="dodaj.php">Dodaj wpis<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="dodaj.php">Add report<span class="sr-only">(current)</span></a></a>
                         </li>
 <li class="nav-item dropdown ">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Język
+          Language
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Polski<img src="gfx/pl.png" alt="Polish" class="fl"></a>
-          <a class="dropdown-item" href="#">Angielski<img src="gfx/eng.png" alt="English" class="fl"></a>
-          <a class="dropdown-item" href="#">Niemiecki<img src="gfx/de.png" alt="German" class="fl"></a>
-          <a class="dropdown-item" href="#">Rosyjski<img src="gfx/rus.png" alt="Russian" class="fl"></a>
+          <a class="dropdown-item" href="#">Polish<img src="gfx/pl.png" alt="Polish" class="fl"></a>
+          <a class="dropdown-item" href="#">English<img src="gfx/eng.png" alt="English" class="fl"></a>
+          <a class="dropdown-item" href="#">German<img src="gfx/de.png" alt="German" class="fl"></a>
+          <a class="dropdown-item" href="#">Russian<img src="gfx/rus.png" alt="Russian" class="fl"></a>
         </div>
       </li>
                     </ul>
                 </div>
             </nav>
 
+        </div>
 
 
 
