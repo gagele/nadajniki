@@ -64,7 +64,7 @@
                     echo("Nastąpił błąd w trakcie łączenia z baza danych");
                 } 
 
-                $select = "SELECT call_sign,name,date,time,rst,locator,remark FROM nadajnik ORDER BY date DESC LIMIT 50";
+                $select = "SELECT call_sign,name,date,time,rst,locator,remark FROM nadajnik ORDER BY id DESC LIMIT 50";
                 
                 $wypisanie = $connection -> query($select);
 echo "<table class=\"tabelka\" cellpadding=\"2\" border=1>";

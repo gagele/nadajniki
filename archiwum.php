@@ -70,7 +70,7 @@
                     echo("Nastąpił błąd w trakcie łączenia z baza danych");
                 } 
 
-                $select = "SELECT call_sign,name,date,time,rst,locator,remark FROM nadajnik ORDER BY date DESC";
+                $select = "SELECT call_sign,name,date,time,rst,locator,remark FROM nadajnik ORDER BY id DESC";
 
                 $wypisanie = $connection -> query($select);
 echo "<table class=\"tabelka\" cellpadding=\"2\" border=1>";
