@@ -74,6 +74,7 @@ echo "<table class=\"tabelka\" cellpadding=\"2\" border=1>";
                     echo("<th>Time</th>");
                     echo("<th>RST</th>");
                     echo("<th>Locator</th>");
+                    echo("<th>KM</th>");
                     echo("<th>Remark</th>");
               echo("</tr>");
                 while(($rekord = $wypisanie -> fetch_assoc()) !== null){
@@ -84,6 +85,7 @@ echo "<table class=\"tabelka\" cellpadding=\"2\" border=1>";
                     echo("<td>".$rekord['time']."</td>");
                     echo("<td>".$rekord['rst']."</td>");
                     echo("<td>".$rekord['locator']."</td>");
+                    echo("<td>Liczba km</td>");
                     echo("<td>".$rekord['remark']."</td>");
                     echo('</tr>');
                 }
