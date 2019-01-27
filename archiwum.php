@@ -18,7 +18,9 @@
 
         <div id="header">
             <nav class="navbar navbar-expand-lg navbar-dark ">
-                <a class="navbar-brand" href="index.php"><h3>Nadajniki</h3></a>
+                <a class="navbar-brand" href="index.php">
+                    <h3>Nadajniki</h3>
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -40,11 +42,13 @@
 
         </div>
         <center>
-<h4><br>Welcome to the archive of entries.
-</h4></center>
+            <h4><br>Welcome to the archive of entries.
+            </h4>
+        </center>
 
-        <div id="tabela">
-           <?php
+        <div id="container">
+            <center>
+            <?php
                 $connection = new mysqli('localhost','root','','nadajniki');
 
                 if(mysqli_connect_errno() != 0){
@@ -54,31 +58,43 @@
                 $select = "SELECT call_sign,name,date,time,rst,locator,remark FROM nadajnik ORDER BY date DESC";
 
                 $wypisanie = $connection -> query($select);
-
+echo "<table class=\"tabelka\" cellpadding=\"2\" border=1>";
+              echo("<tr>");
+               echo("<th>Call Sign</th>");
+                    echo("<th>Name</th>");
+                    echo("<th>Date</th>");
+                    echo("<th>Time</th>");
+                    echo("<th>RST</th>");
+                    echo("<th>Locator</th>");
+                    echo("<th>Remark</th>");
+              echo("</tr>");
                 while(($rekord = $wypisanie -> fetch_assoc()) !== null){
-                    echo($rekord['call_sign']);
-                    echo($rekord['name']);
-                    echo($rekord['date']);
-                    echo($rekord['time']);
-                    echo($rekord['rst']);
-                    echo($rekord['locator']);
-                    echo($rekord['remark']);
-                    echo('<br />');
+                  echo("<tr>");
+                    echo("<td>".$rekord['call_sign']."</td>");
+                    echo("<td>".$rekord['name']."</td>");
+                    echo("<td>".$rekord['date']."</td>");
+                    echo("<td>".$rekord['time']."</td>");
+                    echo("<td>".$rekord['rst']."</td>");
+                    echo("<td>".$rekord['locator']."</td>");
+                    echo("<td>".$rekord['remark']."</td>");
+                    echo('</tr>');
                 }
+             echo("</table>");
 
                 $connection -> close();
             ?>
+                </center>
         </div>
 
-   <div id="flags">
-                <center>
-                    <img src="gfx/pl.png" alt="Polish" class="fl">
-                    <img src="gfx/eng.png" alt="English" class="fl">
-                    <img src="gfx/de.png" alt="Deutsch" class="fl">
+        <div id="flags">
+            <center>
+                <img src="gfx/pl.png" alt="Polish" class="fl">
+                <img src="gfx/eng.png" alt="English" class="fl">
+                <img src="gfx/de.png" alt="Deutsch" class="fl">
 
-                    <img src="gfx/rus.png" alt="Russian" class="fl">
-                </center>
-            </div>
+                <img src="gfx/rus.png" alt="Russian" class="fl">
+            </center>
+        </div>
     </div>
 
 

@@ -44,7 +44,8 @@
 
         </div>
 
-        <div id="tabela">
+        <div id="container">
+          <center>
             <?php
                 $connection = new mysqli('localhost','root','','nadajniki');
 
@@ -53,22 +54,34 @@
                 } 
 
                 $select = "SELECT call_sign,name,date,time,rst,locator,remark FROM nadajnik ORDER BY date DESC LIMIT 50";
-
+                
                 $wypisanie = $connection -> query($select);
-
+echo "<table class=\"tabelka\" cellpadding=\"2\" border=1>";
+              echo("<tr>");
+               echo("<th>Call Sign</th>");
+                    echo("<th>Name</th>");
+                    echo("<th>Date</th>");
+                    echo("<th>Time</th>");
+                    echo("<th>RST</th>");
+                    echo("<th>Locator</th>");
+                    echo("<th>Remark</th>");
+              echo("</tr>");
                 while(($rekord = $wypisanie -> fetch_assoc()) !== null){
-                    echo($rekord['call_sign']);
-                    echo($rekord['name']);
-                    echo($rekord['date']);
-                    echo($rekord['time']);
-                    echo($rekord['rst']);
-                    echo($rekord['locator']);
-                    echo($rekord['remark']);
-                    echo('<br />');
+                    echo("<tr>");
+                    echo("<td>".$rekord['call_sign']."</td>");
+                    echo("<td>".$rekord['name']."</td>");
+                    echo("<td>".$rekord['date']."</td>");
+                    echo("<td>".$rekord['time']."</td>");
+                    echo("<td>".$rekord['rst']."</td>");
+                    echo("<td>".$rekord['locator']."</td>");
+                    echo("<td>".$rekord['remark']."</td>");
+                    echo('</tr>');
                 }
+            echo("</table>");
 
                 $connection -> close();
             ?>
+              </center>
         </div>
         
         <div id="flags">

@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 
-.navbar
-{
-    background-color:#272D2D;
+.navbar {
+    background-color: #272D2D;
 }
+
 li {
     list-style: none;
     display: inline-block;
@@ -35,7 +35,7 @@ body {
     margin: 10px;
     width: 30px;
     border: 0.7px solid #8E9B90;
-    border-radius:40px;
+    border-radius: 40px;
 
 }
 
@@ -45,11 +45,12 @@ body {
     bottom: 0px;
 }
 
-input[type="text"]{
+input[type="text"] {
     margin-bottom: 3px;
 }
-input[type="submit"]{
-    float:right;
+
+input[type="submit"] {
+    float: right;
     margin-right: 15%;
 }
 
@@ -57,42 +58,49 @@ input[type="submit"]{
     flex: 1;
 }
 
-.info
-{
-    font-size:10;
+.info {
+    font-size: 10;
 }
 
 
 table.tabelka {
-  border: 0px solid #FFFFFF;
-  text-align: center;
-  border-collapse: collapse;
+    border: 0px solid #FFFFFF;
+    text-align: center;
+    margin-top: 2%;
+    border-collapse: collapse;
 }
-table.tabelka td, table.tabelka th {
-  border: 1px solid #FFFFFF;
-  padding: 3px 4px;
+
+table.tabelka td,
+table.tabelka th {
+    border: 1px solid #FFFFFF;
+    padding: 3px 4px;
 }
+
 table.tabelka tbody td {
-  font-size: 13px;
+    font-size: 13px;
 }
+
 table.tabelka td:nth-child(even) {
-  background: #EBEBEB;
+    background: #EBEBEB;
 }
+
 table.tabelka thead {
-  background: #FFFFFF;
-  border-bottom: 4px solid #333333;
+    background: #FFFFFF;
+    border-bottom: 4px solid #333333;
 }
+
 table.tabelka thead th {
-  font-size: 15px;
-  font-weight: bold;
-  color: #333333;
-  text-align: center;
-  border-left: 2px solid #333333;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    border-left: 2px solid #333333;
 }
+
 table.tabelka thead th:first-child {
-  border-left: none;
+    border-left: none;
 }
 
 table.tabelka tfoot td {
-  font-size: 14px;
+    font-size: 14px;
 }
