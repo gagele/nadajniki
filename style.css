@@ -118,3 +118,10 @@ table.tabelka thead th:first-child {
 table.tabelka tfoot td {
     font-size: 14px;
 }
+
+.detale
+{
+    width:80%;
+    background-color:white;
+    height: auto;
+}

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 </head>
 
@@ -35,7 +36,7 @@
                         </li>
 <li class="nav-item dropdown ">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Language
+          Language 
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Polish<img src="gfx/pl.png" alt="Polish" class="fl"></a>
@@ -85,7 +86,7 @@ echo "<table class=\"tabelka\" cellpadding=\"2\" border=1>";
                     echo("<td>".$rekord['date']."</td>");
                     echo("<td>".$rekord['time']."</td>");
                     echo("<td>".$rekord['rst']."</td>");
-                    echo("<td>".$rekord['locator']."</td>");
+                    echo("<td>".$rekord['locator']."<br><i style='padding:7px;' class='fas fa-globe-europe fa-lg'></i></td>");
                     echo("<td>Liczba km</td>");
                     echo("<td>".$rekord['remark']."</td>");
                     echo('</tr>');

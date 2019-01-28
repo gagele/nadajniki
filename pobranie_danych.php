@@ -21,10 +21,42 @@
 <html>
     
     <head>
-       <meta http-equiv="refresh" content="0; URL=index.php">
+      <title>Tytuł strony</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Opis strony">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
         
     </head>
-    <body onLoad="index.php"></body>
+    <body>
+        <center>
+        <h1>Your record has been added correctly!
+</h1>
+        <h4>Details of your record:</h4>
+        <br>
+        <div class="detale">
+        <?php
+            
+            echo("<b>Call:</b> ".$call."<hr>");
+            echo("<b>Name:</b> ".$name."<hr>");
+            echo("<b>Date:</b> ".$date."<hr>");
+            echo("<b>Time:</b> ".$time."<hr>");
+            echo("<b>RST:</b> ".$rst."<hr>");
+            echo("<b>Locator:</b> ".$locator."<hr>");
+            echo("<b>Remark:</b> ".$remark."<hr>");
+           
+            
+            
+            ?>
+            <form action="index.php">
+        <input type="submit" value="Return to home page" class="btn btn-dark">
+            </form>
+        </div>
+        </center>
+        
+        
+    </body>
 </html>
 
 

@@ -3,10 +3,12 @@
 <head>
     <title>Tytuł strony</title>
     <meta charset="utf-8">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <meta name="description" content="Opis strony">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+   
 
 </head>
 
@@ -91,7 +93,7 @@ echo "<table class=\"tabelka\" cellpadding=\"2\" border=1>";
                     echo("<td>".$rekord['date']."</td>");
                     echo("<td>".$rekord['time']."</td>");
                     echo("<td>".$rekord['rst']."</td>");
-                    echo("<td>".$rekord['locator']."</td>");
+                    echo("<td>".$rekord['locator']."<br><i style='padding:7px;' class='fas fa-globe-europe fa-lg'></i></td>");
                     echo("<td>Liczba km</td>");
                     echo("<td>".$rekord['remark']."</td>");
                     echo('</tr>');
