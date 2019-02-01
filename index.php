@@ -149,9 +149,9 @@
                     echo("<td>".$rekord['date']."</td>");
                     echo("<td>".$rekord['time']."</td>");
                     echo("<td>".$rekord['rst']."</td>");
-                    echo("<td>".$rekord['locator']."<br><i style='padding:7px;' class='fas fa-globe-europe fa-lg'></i></td>");
+                    echo("<td>".$rekord['locator']."</td>");
                     $loc1 = $rekord['locator'];
-                    $loc2 = "JO61UA";
+                    $loc2 = "JO82JM";
                     $distance = bearing_dist($loc1, $loc2);
                     echo("<td>".$distance[@km]."km"."</td>");
                     echo("<td>".$rekord['remark']."</td>");

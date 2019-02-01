@@ -31,8 +31,8 @@
                             <a class="nav-link" href="archiwum.php">Archive</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="dodaj.php">Add report<span class="sr-only">(current)</span></a></a>
-                        </li>
+                            <a class="nav-link" href="dodaj.php">Add report<span class="sr-only">(current)</span></a>
+                    </li>
 <li class="nav-item dropdown ">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Language
@@ -88,7 +88,7 @@
 
   </footer>
   <!-- Footer -->
-        </div>
+        
 
 
         <!--jquery bootstrap js -->
