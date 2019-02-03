@@ -125,3 +125,10 @@ table.tabelka tfoot td {
     background-color:white;
     height: auto;
 }
+.locator:hover{
+    cursor:pointer;
+}
+#map {
+        height: 400px;  
+        width: 400px;
+}

@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
 </head>
 
 <body>
@@ -149,7 +150,7 @@
                     echo("<td>".$rekord['date']."</td>");
                     echo("<td>".$rekord['time']."</td>");
                     echo("<td>".$rekord['rst']."</td>");
-                    echo("<td>".$rekord['locator']."</td>");
+                    echo("<td class='locator'>".$rekord['locator']."</td>");
                     $loc1 = $rekord['locator'];
                     $loc2 = "JO82JM";
                     $distance = bearing_dist($loc1, $loc2);
@@ -163,7 +164,11 @@
               </center>
         </div>
         
-      
+    <!--The div element for the map -->
+        
+        <h3>My Google Maps Demo</h3>
+        <div id="map"></div>
+        
 <!-- Footer -->
 <footer class="page-footer font-small special-color-dark pt-4">
 
@@ -184,6 +189,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+     <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0GHs0JSPZJ0Igt4X-NdT5Hp2-z6rzNnE&callback=initMap"></script>
 </body>
 
 </html>
