@@ -61,14 +61,12 @@ function initMap() {
         position: {lat: parseFloat(locator2.lat), lng:parseFloat(locator2.lng)},
         map:map
     });
-    console.log(locator2);
     $('.locator').click(function(){  
         var locator1 = cmd_calculate_dec_dms($(this).html());
         var marker = new google.maps.Marker({
-            position: {lat: parseFloat(locator1.lat), lng: parseFloat(locator2.lng)},
+            position: {lat: parseFloat(locator1.lat), lng: parseFloat(locator1.lng)},
             map:map
             }); 
-        console.log(locator1);
     });
 }
 
