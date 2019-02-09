@@ -41,10 +41,10 @@
           Language 
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Polish<img src="gfx/pl.png" alt="Polish" class="fl"></a>
-          <a class="dropdown-item" href="#">English<img src="gfx/eng.png" alt="English" class="fl"></a>
-          <a class="dropdown-item" href="#">German<img src="gfx/de.png" alt="German" class="fl"></a>
-          <a class="dropdown-item" href="#">Russian<img src="gfx/rus.png" alt="Russian" class="fl"></a>
+          <a class="dropdown-item" href="archiwumpl.php">Polish<img src="gfx/pl.png" alt="Polish" class="fl"></a>
+          <a class="dropdown-item" href="archiwum.php">English<img src="gfx/eng.png" alt="English" class="fl"></a>
+          <a class="dropdown-item" href="archiwumde.php">German<img src="gfx/de.png" alt="German" class="fl"></a>
+          <a class="dropdown-item" href="archiwumru.php">Russian<img src="gfx/rus.png" alt="Russian" class="fl"></a>
         </div>
       </li>
                     </ul>

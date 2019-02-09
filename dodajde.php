@@ -18,20 +18,20 @@
 
       <div id="header">
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="index.php"><h3>Nadajniki</h3></a>
+                <a class="navbar-brand" href="indexde.php"><h3>Nadajniki</h3></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php">Main Page</a>
+                            <a class="nav-link" href="indexde.php">Hauptseite</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="archiwum.php">Archive</a>
+                            <a class="nav-link" href="archiwumde.php">Archiv</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="dodaj.php">Add report<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="dodajde.php">Bericht hinzufügen<span class="sr-only">(current)</span></a>
                     </li>
 <li class="nav-item dropdown ">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -54,7 +54,8 @@
 
             <div id="formularz" class="content">
                 <div id="nazwy">
-                    Call sign *<br>Name * <br>Date * <br>Time *<br>RST * <br>Locator<br>Remark
+                    Rufzeichen *<br>Name * <br>Datum * <br>Zeit *<br>RST * <br>Locator<br>Anmerkung
+
                 </div>
                 <div id="formularz1">
                     <form name="formularz-dodawanie" action="pobranie_danych.php" method="POST">
@@ -64,13 +65,13 @@
                         <font class="info">DD/MM/YYYY</font>
                         <br> <input type="text" name="time" required>
                         <br> <input type="text" name="rst" required>
-                        <font class="info">Keep this short, like 579. </font>
+                        <font class="info">Halten Sie dies kurz, wie 579. </font>
                         <br> <input type="text" name="locator">
                         <font class="info"><abbr title="6 characters with no space between the characters, for example JO67KI."> XXNNXX </abbr> </font>
                         <br><textarea cols="23" rows="4" name="remark"></textarea>
                         <font class="info">
-                            QTH can also be typed here, not in the locator field!</font>
-                        <br><br>*Fields marked with this sign must be filled with information, otherwise you will be rejected. <input type="submit" name="dodaj" value="Save Report" class="btn btn-dark">
+                            QTH kann auch hier eingegeben werden, nicht im Locator-Feld!</font>
+                        <br><br>*Felder, die mit diesem Zeichen gekennzeichnet sind, müssen mit Informationen gefüllt sein, andernfalls werden Sie abgelehnt. <input type="submit" name="dodaj" value="Bericht speichern" class="btn btn-dark">
                         <br><br>
                     </form>
 
