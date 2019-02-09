@@ -129,6 +129,30 @@ table.tabelka tfoot td {
     cursor:pointer;
 }
 #map {
-        height: 400px;  
-        width: 400px;
+    transition:all .5s;
+    opacity:0;
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    height: 100%;  
+    width: 100%;
+}
+.close_map:hover{
+    cursor:pointer;
+}
+.close_map {
+    transition: all .5s;
+    display:none;
+    transition: all .5s;
+    font-size:50px;
+    color:red;
+    font-weight: 700;
+    width:100px;
+    height:100px;
+    z-index:99;
+    position:absolute;
+    top:50px;
+    right:0; 
 }

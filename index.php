@@ -165,10 +165,24 @@
         </div>
         
     <!--The div element for the map -->
-        
-        <h3>My Google Maps Demo</h3>
-        <div id="map"></div>
-        
+        <center>
+        <div id="map">
+            </div>
+            <div class="close_map">x</div>
+        </center>
+        <script>
+            $('.locator').click(function(){
+                $('#map').css('opacity','1');
+                $('#map').css('display','block');
+                $('.close_map').css('display','block');
+            })
+            $('.close_map').click(function(){
+                $('#map').css('opacity','0');
+                $('#map').css('display','none');
+                $('.close_map').css('display','none');
+                initMap();
+            })
+        </script>
 <!-- Footer -->
 <footer class="page-footer font-small special-color-dark pt-4">
 

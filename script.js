@@ -43,21 +43,34 @@ function cmd_calculate_dec_dms(qth)
     var y = lon.toFixed(3);
     
     var position = {lat: x, lng: y};
-    return(position);   
-}
-function initMap(var position1, var position2){
-        var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 3, center: position1});
-        var marker = new google.maps.Marker({position: position1, map: map});
-        var marker2 = new google.maps.Marker({position: position2, map: map});
+    return position ;   
 }
 
-$('.locator').click(function(){
-    var locator1 = cmd_calculate_dec_dms($(this).html());
-    var locator2 = cmd_calculate_dec_dms("JO82JM");
+function initMap() {
     
-    initMap(locator1, locator2);
-});
+    var locator2 = cmd_calculate_dec_dms("JO82JM");
+    var options = {
+        zoom: 3.2,
+        center: {lat: parseFloat(locator2.lat), lng: parseFloat(locator2.lng),
+        disableDefaultUI: true
+        } 
+    };
+    var map = new google.maps.Map(
+    document.getElementById('map'), options);
+    var marker = new google.maps.Marker({
+        position: {lat: parseFloat(locator2.lat), lng:parseFloat(locator2.lng)},
+        map:map
+    });
+    console.log(locator2);
+    $('.locator').click(function(){  
+        var locator1 = cmd_calculate_dec_dms($(this).html());
+        var marker = new google.maps.Marker({
+            position: {lat: parseFloat(locator1.lat), lng: parseFloat(locator2.lng)},
+            map:map
+            }); 
+        console.log(locator1);
+    });
+}
 
 
 
