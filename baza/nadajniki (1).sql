@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 23 Sty 2019, 20:36
+-- Czas generowania: 09 Lut 2019, 14:54
 -- Wersja serwera: 10.1.37-MariaDB
 -- Wersja PHP: 7.3.0
 
@@ -30,21 +30,14 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `nadajnik` (
   `id` int(9) NOT NULL,
-  `call_sign` varchar(255) NOT NULL,
-  `name` varchar(64) NOT NULL,
-  `date` varchar(10) NOT NULL,
-  `time` varchar(5) NOT NULL,
+  `call_sign` varchar(255) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL,
+  `name` varchar(64) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL,
+  `date` varchar(10) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL,
+  `time` varchar(5) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL,
   `rst` int(3) NOT NULL,
-  `locator` varchar(6) NOT NULL,
-  `remark` varchar(255) NOT NULL
+  `locator` varchar(6) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL,
+  `remark` varchar(255) CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Zrzut danych tabeli `nadajnik`
---
-
-INSERT INTO `nadajnik` (`id`, `call_sign`, `name`, `date`, `time`, `rst`, `locator`, `remark`) VALUES
-(1, 'Siema to pierwszy wpis na moim blogu', 'Czarek', '23/01/2019', '20:32', 997, 'ER77YK', 'Mam nadzieje ze moj wpis sie wam podobal, nie zapomnijcie o lapce w gore i wgl');
 
 --
 -- Indeksy dla zrzutów tabel
@@ -64,7 +57,7 @@ ALTER TABLE `nadajnik`
 -- AUTO_INCREMENT dla tabeli `nadajnik`
 --
 ALTER TABLE `nadajnik`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
