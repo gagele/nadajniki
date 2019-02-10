@@ -20,30 +20,31 @@
 
         <div id="header">
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="index.php"><h3>Nadajniki</h3></a>
+                <a class="navbar-brand" href="indexpl.php"><h3>Nadajniki</h3></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="indexpl.php">Strona Główna</a>
+                        </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.php">Main Page<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="archiwumpl.php">Archiwum
+                            <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="archiwum.php">Archive</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="dodaj.php">Add report</a>
+                            <a class="nav-link" href="dodajpl.php">Dodaj Raport</a>
                         </li>
 <li class="nav-item dropdown ">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Language 
+          Język
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="index_pl.php">Polish<img src="gfx/pl.png" alt="Polish" class="fl"></a>
-          <a class="dropdown-item" href="index.php">English<img src="gfx/eng.png" alt="English" class="fl"></a>
-          <a class="dropdown-item" href="index_de">German<img src="gfx/de.png" alt="German" class="fl"></a>
-          <a class="dropdown-item" href="index_ru.php">Russian<img src="gfx/rus.png" alt="Russian" class="fl"></a>
+          <a class="dropdown-item" href="archiwumpl.php">Polski<img src="gfx/pl.png" alt="Polish" class="fl"></a>
+          <a class="dropdown-item" href="archiwum.php">English<img src="gfx/eng.png" alt="English" class="fl"></a>
+          <a class="dropdown-item" href="archiwumde.php">Deutsch<img src="gfx/de.png" alt="German" class="fl"></a>
+          <a class="dropdown-item" href="archiwumru.php">русский<img src="gfx/rus.png" alt="Russian" class="fl"></a>
         </div>
       </li>
                     </ul>
@@ -52,9 +53,15 @@
 
         </div>
 
-        <center>
-            <h4><br>Last 50 entries:
+       <center>
+            <h4><br>Witaj w archiwum wpisów.<br><br>(Przyciski sortowania narazie nie działają)
             </h4>
+            
+        <br>
+        <input type="button" name="sort1" value="Reports by call" class="btn btn-dark">
+        <input type="button" name="sort2" value="Reports by KM" class="btn btn-dark">
+        <input type="button" name="sort3" value="Highscores" class="btn btn-dark">
+        <br>
         </center>
 
         <div id="container">
@@ -129,7 +136,7 @@
 
                 //wypisanie do tablicy
               
-                $select = "SELECT call_sign,name,date,time,rst,locator,remark FROM nadajnik ORDER BY id DESC LIMIT 50";
+                $select = "SELECT call_sign,name,date,time,rst,locator,remark FROM nadajnik ORDER BY id DESC";
                 
                 $wypisanie = $connection -> query($select);
               echo "<table class=\"tabelka\" cellpadding=\"2\" border=1>";
