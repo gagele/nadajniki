@@ -32,7 +32,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="archiwumru.php">архив</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="dodajru.php">Добавить отчет</a>
                     </li>
 <li class="nav-item dropdown ">

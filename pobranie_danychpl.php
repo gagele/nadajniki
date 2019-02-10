@@ -31,26 +31,26 @@
     </head>
     <body>
         <center>
-        <h1>Ihr Datensatz wurde korrekt hinzugefügt!
+        <h1>Your record has been added correctly!
 </h1>
-        <h4>Details zu Ihrem Datensatz:</h4>
+        <h4>Details of your record:</h4>
         <br>
         <div class="detale">
         <?php
             
-            echo("<b>Rufzeichen:</b> ".$call."<hr>");
-            echo("<b>Name:</b> ".$name."<hr>");
-            echo("<b>Datum:</b> ".$date."<hr>");
-            echo("<b>Zeit:</b> ".$time."<hr>");
+            echo("<b>Call:</b> ".$call."<hr>");
+            echo("<b>Imię:</b> ".$name."<hr>");
+            echo("<b>Data:</b> ".$date."<hr>");
+            echo("<b>Czas:</b> ".$time."<hr>");
             echo("<b>RST:</b> ".$rst."<hr>");
-            echo("<b>Locator:</b> ".$locator."<hr>");
-            echo("<b>Anmerkung:</b> ".$remark."<hr>");
+            echo("<b>Lokator:</b> ".$locator."<hr>");
+            echo("<b>Komentarz:</b> ".$remark."<hr>");
            
             
             
             ?>
-            <form action="indexde.php">
-        <input type="submit" value="Zur Startseite zurückkehren" class="btn btn-dark">
+            <form action="indexpl.php">
+        <input type="submit" value="Return to home page" class="btn btn-dark">
             </form>
         </div>
         </center>

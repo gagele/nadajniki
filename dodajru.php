@@ -58,7 +58,7 @@
 
                 </div>
                 <div id="formularz1">
-                    <form name="formularz-dodawanie" action="pobranie_danych.php" method="POST">
+                    <form name="formularz-dodawanie" action="pobranie_danychru.php" method="POST">
                         <input type="text"  name="call-sign" required>
                         <br><input type="text" name="name" required>
                         <br><input type="text" name="date" required>
