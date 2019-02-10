@@ -38,7 +38,7 @@
                         </li>
 <li class="nav-item dropdown ">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Language 
+          Sprache 
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="archiwumpl.php">Polish<img src="gfx/pl.png" alt="Polish" class="fl"></a>
