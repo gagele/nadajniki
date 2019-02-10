@@ -38,10 +38,10 @@
           язык
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="dodajpl.php">Polish<img src="gfx/pl.png" alt="Polish" class="fl"></a>
+          <a class="dropdown-item" href="dodajpl.php">Polski<img src="gfx/pl.png" alt="Polish" class="fl"></a>
           <a class="dropdown-item" href="dodaj.php">English<img src="gfx/eng.png" alt="English" class="fl"></a>
-          <a class="dropdown-item" href="dodajde.php">German<img src="gfx/de.png" alt="German" class="fl"></a>
-          <a class="dropdown-item" href="dodajru.php">Russian<img src="gfx/rus.png" alt="Russian" class="fl"></a>
+          <a class="dropdown-item" href="dodajde.php">Deutsch<img src="gfx/de.png" alt="German" class="fl"></a>
+          <a class="dropdown-item" href="dodajru.php">русский<img src="gfx/rus.png" alt="Russian" class="fl"></a>
         </div>
       </li>
                     </ul>

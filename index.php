@@ -40,10 +40,10 @@
           Language 
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="indexpl.php">Polish<img src="gfx/pl.png" alt="Polish" class="fl"></a>
+          <a class="dropdown-item" href="indexpl.php">Polski<img src="gfx/pl.png" alt="Polish" class="fl"></a>
           <a class="dropdown-item" href="index.php">English<img src="gfx/eng.png" alt="English" class="fl"></a>
-          <a class="dropdown-item" href="indexde.php">German<img src="gfx/de.png" alt="German" class="fl"></a>
-          <a class="dropdown-item" href="indexru.php">Russian<img src="gfx/rus.png" alt="Russian" class="fl"></a>
+          <a class="dropdown-item" href="indexde.php">Deutsch<img src="gfx/de.png" alt="German" class="fl"></a>
+          <a class="dropdown-item" href="indexru.php">русский<img src="gfx/rus.png" alt="Russian" class="fl"></a>
         </div>
       </li>
                     </ul>
