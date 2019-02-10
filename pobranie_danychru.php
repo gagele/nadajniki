@@ -38,18 +38,18 @@
         <div class="detale">
         <?php
             
-            echo("<b>Call:</b> ".$call."<hr>");
-            echo("<b>Name:</b> ".$name."<hr>");
-            echo("<b>Date:</b> ".$date."<hr>");
-            echo("<b>Time:</b> ".$time."<hr>");
+            echo("<b>Позывной:</b> ".$call."<hr>");
+            echo("<b>Имя:</b> ".$name."<hr>");
+            echo("<b>Дата:</b> ".$date."<hr>");
+            echo("<b>Время:</b> ".$time."<hr>");
             echo("<b>RST:</b> ".$rst."<hr>");
-            echo("<b>Locator:</b> ".$locator."<hr>");
-            echo("<b>Remark:</b> ".$remark."<hr>");
+            echo("<b>Локатор:</b> ".$locator."<hr>");
+            echo("<b>Примечание:</b> ".$remark."<hr>");
            
             
             
             ?>
-            <form action="index.php">
+            <form action="indexde.php">
         <input type="submit" value="Вернуться на главную страницу" class="btn btn-dark">
             </form>
         </div>
