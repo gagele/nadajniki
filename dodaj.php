@@ -23,7 +23,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                         <li class="nav-item">
                             <a class="nav-link" href="index.php">Main Page</a>
                         </li>
@@ -35,10 +35,10 @@
           Language
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="pl/dodajpl.php">Polski<img src="gfx/pl.png" alt="Polish" class="fl"></a>
-          <a class="dropdown-item" href="dodaj.php">English<img src="gfx/eng.png" alt="English" class="fl"></a>
-          <a class="dropdown-item" href="de/dodajde.php">Deutsch<img src="gfx/de.png" alt="German" class="fl"></a>
-          <a class="dropdown-item" href="ru/dodajru.php">русский<img src="gfx/rus.png" alt="Russian" class="fl"></a>
+          <a class="dropdown-item" href="pl/dodajpl.php"><img src="gfx/pl.png" alt="Polish" class="fl"></a>
+          <a class="dropdown-item" href="dodaj.php"><img src="gfx/eng.png" alt="English" class="fl"></a>
+          <a class="dropdown-item" href="de/dodajde.php"><img src="gfx/de.png" alt="German" class="fl"></a>
+          <a class="dropdown-item" href="ru/dodajru.php"><img src="gfx/rus.png" alt="Russian" class="fl"></a>
         </div>
       </li>
                     </ul>
