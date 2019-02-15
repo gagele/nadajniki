@@ -14,6 +14,12 @@
     $locator = $_POST["locator"];
     $remark = $_POST["remark"];
 
+    $call=strtoupper($call); //zamiana na wielkie litery
+    $name=strtolower($name); //zamiana na wszystkie male
+    $name=ucfirst($name); //zamiana na pierwsza wielka
+    $locator=strtoupper($locator); //locator na wielkie
+
+
     $insert = "INSERT INTO nadajnik (`call_sign`,`name`,`date`,`time`,`rst`,`locator`,`remark`) VALUES ('$call','$name','$date','$time','$rst','$locator','$remark')";
     $connection -> query($insert);
     $connection -> close();

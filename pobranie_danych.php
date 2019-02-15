@@ -14,30 +14,37 @@
     $locator = $_POST["locator"];
     $remark = $_POST["remark"];
 
+    $call=strtoupper($call); //zamiana na wielkie litery
+    $name=strtolower($name); //zamiana na wszystkie male
+    $name=ucfirst($name); //zamiana na pierwsza wielka
+    $locator=strtoupper($locator); //locator na wielkie
+
+        
     $insert = "INSERT INTO nadajnik (`call_sign`,`name`,`date`,`time`,`rst`,`locator`,`remark`) VALUES ('$call','$name','$date','$time','$rst','$locator','$remark')";
     $connection -> query($insert);
     $connection -> close();
 ?>
 
 <html>
-    
-    <head>
-      <title>Tytuł strony</title>
+
+<head>
+    <title>Tytuł strony</title>
     <meta charset="utf-8">
     <meta name="description" content="Opis strony">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-        
-    </head>
-    <body>
-        <center>
+
+</head>
+
+<body>
+    <center>
         <h1>Your record has been added correctly!
-</h1>
+        </h1>
         <h4>Details of your record:</h4>
         <br>
         <div class="detale">
-        <?php
+            <?php
             
             echo("<b>Call:</b> ".$call."<hr>");
             echo("<b>Name:</b> ".$name."<hr>");
@@ -51,13 +58,12 @@
             
             ?>
             <form action="index.php">
-        <input type="submit" value="Return to home page" class="btn btn-dark">
+                <input type="submit" value="Return to home page" class="btn btn-dark">
             </form>
         </div>
-        </center>
-        
-        
-    </body>
+    </center>
+
+
+</body>
+
 </html>
-
-

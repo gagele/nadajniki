@@ -55,9 +55,9 @@
             </h4>
             
         <br>
-        <input type="button" name="sort1" value="Reports by call" class="btn btn-dark">
-        <input type="button" name="sort2" value="Reports by KM" class="btn btn-dark">
-        <input type="button" name="sort3" value="Highscores" class="btn btn-dark">
+        <input type="button" name="sort1" value="Raporty według połączeń" class="btn btn-dark">
+        <input type="button" name="sort2" value="Raporty według KM" class="btn btn-dark">
+        <input type="button" name="sort3" value="Najwyższe wyniki" class="btn btn-dark">
         <br>
         </center>
 
