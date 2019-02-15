@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="description" content="Opis strony">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     
@@ -20,31 +20,28 @@
 
         <div id="header">
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="indexde.php"><h3>Nadajniki</h3></a>
+                <a class="navbar-brand" href="indexpl.php"><h3>Nadajniki</h3></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="indexde.php">Hauptseite</a>
+                            <a class="nav-link" href="indexpl.php">Strona Główna</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="archiwumde.php">Archiv
-                            <span class="sr-only">(current)</span></a>
-                        </li>
+                       
                         <li class="nav-item">
-                            <a class="nav-link" href="dodajde.php">Bericht hinzufügen</a>
+                            <a class="nav-link" href="dodajpl.php">Dodaj Raport</a>
                         </li>
 <li class="nav-item dropdown ">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Sprache 
+          Język
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="archiwumpl.php">Polski<img src="gfx/pl.png" alt="Polish" class="fl"></a>
-          <a class="dropdown-item" href="archiwum.php">English<img src="gfx/eng.png" alt="English" class="fl"></a>
-          <a class="dropdown-item" href="archiwumde.php">Deutsch<img src="gfx/de.png" alt="German" class="fl"></a>
-          <a class="dropdown-item" href="archiwumru.php">русский<img src="gfx/rus.png" alt="Russian" class="fl"></a>
+          <a class="dropdown-item" href="archiwumpl.php"><img src="../gfx/pl.png" alt="Polish" class="fl">Polski</a>
+          <a class="dropdown-item" href="../archiwum.php"><img src="../gfx/eng.png" alt="English" class="fl">English</a>
+          <a class="dropdown-item" href="../de/archiwumde.php"><img src="../gfx/de.png" alt="German" class="fl">Deutsch</a>
+          <a class="dropdown-item" href="../ru/archiwumru.php"><img src="../gfx/rus.png" alt="Russian" class="fl">русский</a>
         </div>
       </li>
                     </ul>
@@ -54,12 +51,12 @@
         </div>
 
        <center>
-            <h4><br>Willkommen im Archiv der Einträge.<br><br>(Sortierknöpfe funktionieren im Moment nicht)
+            <h4><br>Witaj w archiwum wpisów.<br><br>(Przyciski sortowania narazie nie działają)
             </h4>
             
         <br>
-        <input type="button" name="sort1" value="Berichte per Anruf" class="btn btn-dark">
-        <input type="button" name="sort2" value="Berichte per KM" class="btn btn-dark">
+        <input type="button" name="sort1" value="Reports by call" class="btn btn-dark">
+        <input type="button" name="sort2" value="Reports by KM" class="btn btn-dark">
         <input type="button" name="sort3" value="Highscores" class="btn btn-dark">
         <br>
         </center>
@@ -68,7 +65,7 @@
           <center>
             <?php
               //polaczenie z baza
-              $connection = new mysqli('localhost','root','','nadajniki');
+                $connection = new mysqli('localhost','root','','nadajniki');
 
 
                 if(mysqli_connect_errno() != 0){
@@ -196,11 +193,7 @@
 
 
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-      <a href="#">Link</a>
-    </div>
-    <!-- Copyright -->
+    
 
   </footer>
   <!-- Footer -->
@@ -210,8 +203,8 @@
     <!--jquery bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
-    <script src="script.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="../script.js"></script>
      <script async defer
      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0GHs0JSPZJ0Igt4X-NdT5Hp2-z6rzNnE&callback=initMap"></script>
 </body>

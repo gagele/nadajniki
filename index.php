@@ -26,24 +26,22 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.php">Main Page<span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dodaj.php">Add report</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="archiwum.php">Archive</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="dodaj.php">Add report</a>
-                        </li>
+                        
 <li class="nav-item dropdown ">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Language 
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="indexpl.php">Polski<img src="gfx/pl.png" alt="Polish" class="fl"></a>
+          <a class="dropdown-item" href="pl/indexpl.php">Polski<img src="gfx/pl.png" alt="Polish" class="fl"></a>
           <a class="dropdown-item" href="index.php">English<img src="gfx/eng.png" alt="English" class="fl"></a>
-          <a class="dropdown-item" href="indexde.php">Deutsch<img src="gfx/de.png" alt="German" class="fl"></a>
-          <a class="dropdown-item" href="indexru.php">русский<img src="gfx/rus.png" alt="Russian" class="fl"></a>
+          <a class="dropdown-item" href="de/indexde.php">Deutsch<img src="gfx/de.png" alt="German" class="fl"></a>
+          <a class="dropdown-item" href="ru/indexru.php">русский<img src="gfx/rus.png" alt="Russian" class="fl"></a>
         </div>
       </li>
                     </ul>
@@ -189,11 +187,7 @@
 
 
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-      <a href="#">Link</a>
-    </div>
-    <!-- Copyright -->
+   
 
   </footer>
   <!-- Footer -->

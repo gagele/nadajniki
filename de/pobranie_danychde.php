@@ -26,15 +26,15 @@
     <meta charset="utf-8">
     <meta name="description" content="Opis strony">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+   <link rel="stylesheet" type="text/css" href="../style.css">
         
     </head>
     <body>
         <center>
-        <h1>Ваша запись была добавлена ​​правильно!
+        <h1>Ihr Datensatz wurde korrekt hinzugefügt!
 </h1>
-        <h4>Подробности о вашей записи:</h4>
+        <h4>Details zu Ihrem Datensatz:</h4>
         <br>
         <div class="detale">
         <?php
@@ -50,8 +50,8 @@
             
             
             ?>
-            <form action="index.php">
-        <input type="submit" value="Вернуться на главную страницу" class="btn btn-dark">
+            <form action="../de/indexde.php">
+        <input type="submit" value="Zur Startseite zurückkehren" class="btn btn-dark">
             </form>
         </div>
         </center>

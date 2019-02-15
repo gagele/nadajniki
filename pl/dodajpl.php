@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="description" content="Opis strony">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
 
 </head>
 
@@ -30,18 +30,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="archiwumpl.php">Archiwum</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="dodajpl.php">Dodaj Raport<span class="sr-only">(current)</span></a>
-                    </li>
+                       
 <li class="nav-item dropdown ">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Język
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="dodajpl.php">Polski<img src="gfx/pl.png" alt="Polish" class="fl"></a>
-          <a class="dropdown-item" href="dodaj.php">English<img src="gfx/eng.png" alt="English" class="fl"></a>
-          <a class="dropdown-item" href="dodajde.php">Deutsch<img src="gfx/de.png" alt="German" class="fl"></a>
-          <a class="dropdown-item" href="dodajru.php">русский<img src="gfx/rus.png" alt="Russian" class="fl"></a>
+          <a class="dropdown-item" href="dodajpl.php"><img src="../gfx/pl.png" alt="Polish" class="fl">Polski</a>
+          <a class="dropdown-item" href="../dodaj.php"><img src="../gfx/eng.png" alt="English" class="fl">English</a>
+          <a class="dropdown-item" href="../de/dodajde.php"><img src="../gfx/de.png" alt="German" class="fl">Deutsch</a>
+          <a class="dropdown-item" href="../ru/dodajru.php"><img src="../gfx/rus.png" alt="Russian" class="fl">русский</a>
         </div>
       </li>
                     </ul>
@@ -94,7 +92,7 @@
         <!--jquery bootstrap js -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="../bootstrap/js/bootstrap.js"></script>
 
        
 </body>

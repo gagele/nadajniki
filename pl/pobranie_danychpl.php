@@ -25,8 +25,8 @@
     <meta charset="utf-8">
     <meta name="description" content="Opis strony">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
         
     </head>
     <body>
@@ -49,7 +49,7 @@
             
             
             ?>
-            <form action="index.php">
+            <form action="indexpl.php">
         <input type="submit" value="Powrót na stronę główną" class="btn btn-dark">
             </form>
         </div>

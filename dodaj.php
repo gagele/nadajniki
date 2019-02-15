@@ -29,19 +29,16 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="archiwum.php">Archive</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="dodaj.php">Add report<span class="sr-only">(current)</span></a>
-                    </li>
+                       
 <li class="nav-item dropdown ">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Language
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="dodajpl.php">Polski<img src="gfx/pl.png" alt="Polish" class="fl"></a>
+          <a class="dropdown-item" href="pl/dodajpl.php">Polski<img src="gfx/pl.png" alt="Polish" class="fl"></a>
           <a class="dropdown-item" href="dodaj.php">English<img src="gfx/eng.png" alt="English" class="fl"></a>
-          <a class="dropdown-item" href="dodajde.php">Deutsch<img src="gfx/de.png" alt="German" class="fl"></a>
-          <a class="dropdown-item" href="dodajru.php">русский<img src="gfx/rus.png" alt="Russian" class="fl"></a>
+          <a class="dropdown-item" href="de/dodajde.php">Deutsch<img src="gfx/de.png" alt="German" class="fl"></a>
+          <a class="dropdown-item" href="ru/dodajru.php">русский<img src="gfx/rus.png" alt="Russian" class="fl"></a>
         </div>
       </li>
                     </ul>

@@ -29,10 +29,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.php">Main Page</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="archiwum.php">Archive
-                            <span class="sr-only">(current)</span></a>
-                        </li>
+            
                         <li class="nav-item">
                             <a class="nav-link" href="dodaj.php">Add report</a>
                         </li>
@@ -41,10 +38,10 @@
           Language 
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="archiwumpl.php">Polski<img src="gfx/pl.png" alt="Polish" class="fl"></a>
+          <a class="dropdown-item" href="pl/archiwumpl.php">Polski<img src="gfx/pl.png" alt="Polish" class="fl"></a>
           <a class="dropdown-item" href="archiwum.php">English<img src="gfx/eng.png" alt="English" class="fl"></a>
-          <a class="dropdown-item" href="archiwumde.php">Deutsch<img src="gfx/de.png" alt="German" class="fl"></a>
-          <a class="dropdown-item" href="archiwumru.php">русский<img src="gfx/rus.png" alt="Russian" class="fl"></a>
+          <a class="dropdown-item" href="de/archiwumde.php">Deutsch<img src="gfx/de.png" alt="German" class="fl"></a>
+          <a class="dropdown-item" href="ru/archiwumru.php">русский<img src="gfx/rus.png" alt="Russian" class="fl"></a>
         </div>
       </li>
                     </ul>
@@ -196,11 +193,7 @@
 
 
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-      <a href="#">Link</a>
-    </div>
-    <!-- Copyright -->
+    
 
   </footer>
   <!-- Footer -->
