@@ -52,7 +52,7 @@
 
             <div id="formularz" class="content">
                 <div id="nazwy">
-                    Call sign *<br>Imię * <br>Data * <br>Czas *<br>RST * <br>Lokator<br>Komentarz
+                    Call sign *<br>Imię * <br>Data * <br>Czas *<br>RST * <br>Lokator<br>Freq MHz<br>Mode<br>Komentarz
                 </div>
                 <div id="formularz1">
                     <form name="formularz-dodawanie" action="pobranie_danychpl.php" method="POST">
@@ -64,6 +64,8 @@
                         <br> <input type="text" name="rst" required>
                         <font class="info">Krótkie, przykład 579. </font>
                         <br> <input type="text" name="locator">
+                         <br> <input type="number" name="freq-mhz">
+                        <br> <input type="text" name="Mode">
                         <font class="info"><abbr title="6 znaków bez spacji pomiędzy nimi, np: JO67KI."> XXNNXX </abbr> </font>
                         <br><textarea cols="23" rows="4" name="remark"></textarea>
                         <font class="info">

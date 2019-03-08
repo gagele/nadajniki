@@ -139,6 +139,8 @@
                     echo("<th>Time</th>");
                     echo("<th>RST</th>");
                     echo("<th>Locator</th>");
+               echo("<th>Freq MHz</th>");
+                    echo("<th>Mode</th>");
                     echo("<th>KM</th>");
                     echo("<th>Remark</th>");
               echo("</tr>");
@@ -153,6 +155,8 @@
                     $loc1 = $rekord['locator'];
                     $loc2 = "JO82JM";
                     $distance = bearing_dist($loc1, $loc2);
+                    echo("<td>Freq</td>");
+                    echo("<td>Mode</td>");
                     echo("<td>".$distance[@km]."km"."</td>");
                     echo("<td>".$rekord['remark']."</td>");
                     echo('</tr>');

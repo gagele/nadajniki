@@ -52,7 +52,7 @@
 
             <div id="formularz" class="content">
                 <div id="nazwy">
-                    Позывной * <br> Имя * <br> Дата * <br> Время * <br> RST * <br> Локатор <br> Примечание
+                    Позывной * <br> Имя * <br> Дата * <br> Время * <br> RST * <br> Локатор<br>Freq MHz<br>Mode <br> Примечание
 
                 </div>
                 <div id="formularz1">
@@ -65,6 +65,8 @@
                         <br> <input type="text" name="rst" required>
                         <font class="info">Держите это коротким, как 579. </font>
                         <br> <input type="text" name="locator">
+                         <br> <input type="number" name="freq-mhz">
+                        <br> <input type="text" name="Mode">
                         <font class="info"><abbr title="6 characters with no space between the characters, for example JO67KI."> XXNNXX </abbr> </font>
                         <br><textarea cols="23" rows="4" name="remark"></textarea>
                         <font class="info">

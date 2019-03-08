@@ -51,7 +51,7 @@
 
             <div id="formularz" class="content">
                 <div id="nazwy">
-                    Call sign *<br>Name * <br>Date * <br>Time *<br>RST * <br>Locator<br>Remark
+                    Call sign *<br>Name * <br>Date * <br>Time *<br>RST * <br>Locator<br>Freq MHz<br>Mode<br>Remark
                 </div>
                 <div id="formularz1">
                     <form name="formularz-dodawanie" action="pobranie_danych.php" method="POST">
@@ -64,6 +64,8 @@
                         <font class="info">Keep this short, like 579. </font>
                         <br> <input type="text" name="locator">
                         <font class="info"><abbr title="6 characters with no space between the characters, for example JO67KI."> XXNNXX </abbr> </font>
+                        <br> <input type="number" name="freq-mhz">
+                        <br> <input type="text" name="Mode">
                         <br><textarea cols="23" rows="4" name="remark"></textarea>
                         <font class="info">
                             QTH can also be typed here, not in the locator field!</font>
