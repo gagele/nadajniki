@@ -54,7 +54,8 @@
             <h4><br>Welcome to the archive of entries.<br><br>(Sorting buttons aren't working for the moment)
             </h4>
             
-        <div class="buttons">
+        <br>
+         <div class="buttons">
          <form name="repbycall" action="reports_by_call.php" method="POST">
         <input type="submit" name="sort1" value="Reports by call" class="btn btn-dark sort-btn">
            </form>

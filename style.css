@@ -156,3 +156,12 @@ table.tabelka tfoot td {
     top:50px;
     right:0; 
 }
+.buttons
+{
+    float:center;
+    text-align: center;
+    width:74%;
+    margin-right:13%;
+    margin-left:13%;
+    margin-bottom: 5%;
+}
