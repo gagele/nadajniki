@@ -65,7 +65,7 @@
                         <br> <input type="text" name="locator">
                         <font class="info"><abbr title="6 characters with no space between the characters, for example JO67KI."> XXNNXX </abbr> </font>
                         <br> <input type="number" name="freq-mhz">
-                        <br> <input type="text" name="Mode">
+                        <br> <input type="text" name="mode">
                         <br><textarea cols="23" rows="4" name="remark"></textarea>
                         <font class="info">
                             QTH can also be typed here, not in the locator field!</font>

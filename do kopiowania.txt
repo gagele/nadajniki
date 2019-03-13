@@ -1,0 +1,22 @@
+$select = "SELECT call_sign,name,date,time,rst,locator,freqmhz,mode,remark FROM nadajnik ORDER BY id DESC LIMIT 50";
+
+
+
+while(($rekord = $wypisanie -> fetch_assoc()) !== null){
+                    echo("<tr>");
+                    echo("<td>".$rekord['call_sign']."</td>");
+                    echo("<td class=imie>".$rekord['name']."</td>");
+                    echo("<td>".$rekord['date']."</td>");
+                    echo("<td>".$rekord['time']."</td>");
+                    echo("<td>".$rekord['rst']."</td>");
+                    echo("<td class='locator'>".$rekord['locator']."</td>");
+                    $loc1 = $rekord['locator'];
+                    $loc2 = "JO82JM";
+                    $distance = bearing_dist($loc1, $loc2);
+                    echo("<td>".$rekord['freqmhz']."</td>");
+                    echo("<td>".$rekord['mode']."</td>");
+                    echo("<td>".$distance[@km]."km"."</td>");
+                    echo("<td>".$rekord['remark']."</td>");
+                    echo('</tr>');
+                }
+            echo("</table>");
