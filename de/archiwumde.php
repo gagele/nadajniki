@@ -134,21 +134,23 @@
 
                 //wypisanie do tablicy
               
-                $select = "SELECT call_sign,name,date,time,rst,locator,remark FROM nadajnik ORDER BY id DESC";
+                $select = "SELECT call_sign,name,date,time,rst,locator,freqmhz,mode,remark FROM nadajnik ORDER BY id DESC";
                 
-                $wypisanie = $connection -> query($select);
+                 $wypisanie = $connection -> query($select);
               echo "<table class=\"tabelka\" cellpadding=\"2\" border=1>";
               echo("<tr>");
-               echo("<th>Call Sign</th>");
+               echo("<th>Rufzeichen </th>");
                     echo("<th>Name</th>");
-                    echo("<th>Date</th>");
-                    echo("<th>Time</th>");
+                    echo("<th>Datum</th>");
+                    echo("<th>Zeit</th>");
                     echo("<th>RST</th>");
                     echo("<th>Locator</th>");
+               echo("<th>Fraquenz</th>");
+                    echo("<th>Mode</th>");
                     echo("<th>KM</th>");
-                    echo("<th>Remark</th>");
+                    echo("<th>Anmerkung</th>");
               echo("</tr>");
-                while(($rekord = $wypisanie -> fetch_assoc()) !== null){
+               while(($rekord = $wypisanie -> fetch_assoc()) !== null){
                     echo("<tr>");
                     echo("<td>".$rekord['call_sign']."</td>");
                     echo("<td class=imie>".$rekord['name']."</td>");
@@ -159,6 +161,8 @@
                     $loc1 = $rekord['locator'];
                     $loc2 = "JO82JM";
                     $distance = bearing_dist($loc1, $loc2);
+                    echo("<td>".$rekord['freqmhz']."</td>");
+                    echo("<td>".$rekord['mode']."</td>");
                     echo("<td>".$distance[@km]."km"."</td>");
                     echo("<td>".$rekord['remark']."</td>");
                     echo('</tr>');

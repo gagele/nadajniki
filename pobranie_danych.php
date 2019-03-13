@@ -22,7 +22,7 @@
     $locator=strtoupper($locator); //locator na wielkie
 
         
-    $insert = "INSERT INTO nadajnik (`call_sign`,`name`,`date`,`time`,`rst`,`locator`,`freqmhz`,`mode`,`remark`) VALUES ('$call','$name','$date','$time','$rst','$locator','$freqmhz','$mode','$remark')";
+   $insert = "INSERT INTO nadajnik (`call_sign`,`name`,`date`,`time`,`rst`,`locator`,`freqmhz`,`mode`,`remark`) VALUES ('$call','$name','$date','$time','$rst','$locator','$freqmhz','$mode','$remark')";
     $connection -> query($insert);
     $connection -> close();
 ?>

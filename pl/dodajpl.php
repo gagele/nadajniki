@@ -65,7 +65,7 @@
                         <font class="info">Krótkie, przykład 579. </font>
                         <br> <input type="text" name="locator">
                          <br> <input type="number" name="freq-mhz">
-                        <br> <input type="text" name="Mode">
+                        <br> <input type="text" name="mode">
                         <font class="info"><abbr title="6 znaków bez spacji pomiędzy nimi, np: JO67KI."> XXNNXX </abbr> </font>
                         <br><textarea cols="23" rows="4" name="remark"></textarea>
                         <font class="info">

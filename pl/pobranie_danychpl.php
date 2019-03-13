@@ -10,6 +10,8 @@
     $date = $_POST["date"];
     $time = $_POST["time"];
     $rst = $_POST["rst"];
+    $freqmhz = $_POST["freq-mhz"];
+    $mode = $_POST["mode"];
     $locator = $_POST["locator"];
     $remark = $_POST["remark"];
 
@@ -19,7 +21,7 @@
     $locator=strtoupper($locator); //locator na wielkie
 
 
-    $insert = "INSERT INTO nadajnik (`call_sign`,`name`,`date`,`time`,`rst`,`locator`,`remark`) VALUES ('$call','$name','$date','$time','$rst','$locator','$remark')";
+   $insert = "INSERT INTO nadajnik (`call_sign`,`name`,`date`,`time`,`rst`,`locator`,`freqmhz`,`mode`,`remark`) VALUES ('$call','$name','$date','$time','$rst','$locator','$freqmhz','$mode','$remark')";
     $connection -> query($insert);
     $connection -> close();
 ?>

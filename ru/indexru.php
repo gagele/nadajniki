@@ -128,21 +128,25 @@
 
                 //wypisanie do tablicy
               
-                $select = "SELECT call_sign,name,date,time,rst,locator,remark FROM nadajnik ORDER BY id DESC LIMIT 50";
-                
-                $wypisanie = $connection -> query($select);
+                $select = "SELECT call_sign,name,date,time,rst,locator,freqmhz,mode,remark FROM nadajnik ORDER BY id DESC LIMIT 50";
+
+
+
+$wypisanie = $connection -> query($select);
               echo "<table class=\"tabelka\" cellpadding=\"2\" border=1>";
               echo("<tr>");
-               echo("<th>Call Sign</th>");
-                    echo("<th>Name</th>");
-                    echo("<th>Date</th>");
-                    echo("<th>Time</th>");
+               echo("<th>Позывной</th>");
+                    echo("<th>Имя</th>");
+                    echo("<th>Дата </th>");
+                    echo("<th>Время</th>");
                     echo("<th>RST</th>");
-                    echo("<th>Locator</th>");
+                    echo("<th>Локатор</th>");
+               echo("<th>частота</th>");
+                    echo("<th>поря́док</th>");
                     echo("<th>KM</th>");
-                    echo("<th>Remark</th>");
+                    echo("<th>Примечание</th>");
               echo("</tr>");
-                while(($rekord = $wypisanie -> fetch_assoc()) !== null){
+               while(($rekord = $wypisanie -> fetch_assoc()) !== null){
                     echo("<tr>");
                     echo("<td>".$rekord['call_sign']."</td>");
                     echo("<td class=imie>".$rekord['name']."</td>");
@@ -153,6 +157,8 @@
                     $loc1 = $rekord['locator'];
                     $loc2 = "JO82JM";
                     $distance = bearing_dist($loc1, $loc2);
+                    echo("<td>".$rekord['freqmhz']."</td>");
+                    echo("<td>".$rekord['mode']."</td>");
                     echo("<td>".$distance[@km]."km"."</td>");
                     echo("<td>".$rekord['remark']."</td>");
                     echo('</tr>');
